@@ -25,20 +25,22 @@
     text.style.color = 'black';
 
     // Append the text to the div
-    fullScreenDiv.appendChild(text);
-
-    // Append div to body
-    document.body.appendChild(fullScreenDiv);
-
-    // Disable closing via Escape key
-    window.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' || e.keyCode === 27) {
+    setTimeout(function(){
+        fullScreenDiv.appendChild(text);
+    
+        // Append div to body
+        document.body.appendChild(fullScreenDiv);
+    
+        // Disable closing via Escape key
+        window.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' || e.keyCode === 27) {
+                e.preventDefault();
+            }
+        });
+    
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
-        }
-    });
-
-    // Disable right-click context menu
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
+        });
+    },60000);
 })();
