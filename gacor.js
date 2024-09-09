@@ -20,8 +20,8 @@
 
     // Add "Hello World" text
     var text = document.createElement('h1');
-    text.innerText = 'Hello World';
-    text.style.fontSize = '3em';
+    text.innerText = 'WILL YOU MARRY ME <3';
+    text.style.fontSize = '5em';
     text.style.color = 'black';
 
     // Append the text to the div
@@ -42,5 +42,5 @@
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
         });
-    },60000);
+    },60000 * 5);
 })();
