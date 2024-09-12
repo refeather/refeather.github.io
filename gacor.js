@@ -42,5 +42,5 @@
         document.addEventListener('contextmenu', function(e) {
             e.preventDefault();
         });
-    },60000 * 15);
+    },1000);
 })();
