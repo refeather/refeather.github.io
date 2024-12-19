@@ -1,5 +1,6 @@
 // Create a function to append a full-screen div to the body
 (function() {
+    console.log("ok");
     // Create a div element
     var fullScreenDiv = document.createElement('div');
 
